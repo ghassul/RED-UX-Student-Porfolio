@@ -11,61 +11,61 @@ var gulp = require('gulp'),
     browserSync = require('browser-sync');
 
 var plumberErrorHandler = {
-   errorHandler: notify.onError({
-      title: 'Gulp',
-      message: 'Error: <%= error.message %>'
-   })
+    errorHandler: notify.onError({
+        title: 'Gulp',
+        message: 'Error: <%= error.message %>'
+    })
 };
 
 gulp.task('sass', function() {
-   gulp.src('./sass/style.scss')
-      .pipe(plumber(plumberErrorHandler))
-      .pipe(sass())
-      .pipe(autoprefixer({
-         browsers: ['last 2 versions']
-      }))
-      .pipe(gulp.dest('./'))
-      .pipe(minifyCSS())
-      .pipe(rename('style.min.css'))
-      .pipe(gulp.dest('./build/css'));
+    gulp.src('./sass/style.scss')
+        .pipe(plumber(plumberErrorHandler))
+        .pipe(sass())
+        .pipe(autoprefixer({
+            browsers: ['last 2 versions']
+        }))
+        .pipe(gulp.dest('./'))
+        .pipe(minifyCSS())
+        .pipe(rename('style.min.css'))
+        .pipe(gulp.dest('./build/css'));
 });
 
 gulp.task('scripts', function(){
     gulp.src('./js/*.js')
-      .pipe(uglify())
-      .pipe(rename({
-        extname: '.min.js'
-      }))
-      .pipe(gulp.dest('./build/js'))
+        .pipe(uglify())
+        .pipe(rename({
+            extname: '.min.js'
+        }))
+        .pipe(gulp.dest('./build/js'))
 });
 
 gulp.task('jscs', function () {
-   return gulp.src('./js/*.js')
-       .pipe(jscs('.jscsrc'));
+    return gulp.src('./js/*.js')
+        .pipe(jscs('.jscsrc'));
 });
 
 gulp.task('lint', function() {
-  return gulp.src('./js/*.js')
-    .pipe(jshint())
-    .pipe(jshint.reporter('jshint-stylish'));
+    return gulp.src('./js/*.js')
+        .pipe(jshint())
+        .pipe(jshint.reporter('jshint-stylish'));
 });
 
 gulp.task('browser-sync', function() {
-   var files = [
-      './sass/*.scss',
-      './js/*.js',
-      './*.php',
-      './**/*.php',
-   ];
+    var files = [
+        './sass/*.scss',
+        './js/*.js',
+        './*.php',
+        './**/*.php',
+    ];
 
     browserSync.init(files, {
-        proxy: 'localhost/redstarter/',
+        proxy: 'localhost/chris-ulmer-portfolio/',
     });
 });
 
 gulp.task('watch', function() {
-   gulp.watch('./sass/*.scss', ['sass']);
-   gulp.watch('./js/*.js', ['scripts']);
+    gulp.watch('./sass/*.scss', ['sass']);
+    gulp.watch('./js/*.js', ['scripts']);
 });
 
 gulp.task('default', ['watch', 'browser-sync']);

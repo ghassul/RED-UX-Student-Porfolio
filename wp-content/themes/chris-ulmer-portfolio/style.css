@@ -1,9 +1,9 @@
 /*!
-Theme Name: RED Starter Theme
+Theme Name: Chris Ulmer Portfolio Theme
 Theme URI: http://underscores.me/
-Author: RED Academy
+Author: Blaze Kroeger
 Author URI: http://www.redacademy.com
-Description: A WordPress starter theme for RED Academy students.
+Description: A custom Wordpress theme for Chris Ulmer's portfolio site.
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -12,7 +12,7 @@ Tags:
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 
-RED Starter Theme is based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc.
+Chris Ulmer Portfolio Theme is based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc.
 Underscores is distributed under the terms of the GNU GPL v2 or later.
 
 Normalizing styles have been helped along thanks to the fine work of
@@ -222,6 +222,48 @@ th {
 /*--------------------------------------------------------------
 # Embedded Fonts
 --------------------------------------------------------------*/
+@font-face {
+  font-family: 'cabin';
+  src: url("../../assets/fonts/cabin-regular-webfont.eot");
+  src: url("../../assets/fonts/cabin-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/cabin-regular-webfont.woff2") format("woff2"), url("../../assets/fonts/cabin-regular-webfont.woff") format("woff"), url("../../assets/fonts/cabin-regular-webfont.ttf") format("truetype"), url("../../assets/fonts/cabin-regular-webfont.svg#cabinregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'cabin';
+  src: url("../../assets/fonts/cabin-italic-webfont.eot");
+  src: url("../../assets/fonts/cabin-italic-webfont.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/cabin-italic-webfont.woff2") format("woff2"), url("../../assets/fonts/cabin-italic-webfont.woff") format("woff"), url("../../assets/fonts/cabin-italic-webfont.ttf") format("truetype"), url("../../assets/fonts/cabin-italic-webfont.svg#cabinitalic") format("svg");
+  font-weight: normal;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'cabin';
+  src: url("../../assets/fonts/cabin-bold-webfont.eot");
+  src: url("../../assets/fonts/cabin-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/cabin-bold-webfont.woff2") format("woff2"), url("../../assets/fonts/cabin-bold-webfont.woff") format("woff"), url("../../assets/fonts/cabin-bold-webfont.ttf") format("truetype"), url("../../assets/fonts/cabin-bold-webfont.svg#cabinbold") format("svg");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'pt_serif';
+  src: url("../../assets/fonts/ptf75f-webfont.eot");
+  src: url("../../assets/fonts/ptf75f-webfont.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/ptf75f-webfont.woff2") format("woff2"), url("../../assets/fonts/ptf75f-webfont.woff") format("woff"), url("../../assets/fonts/ptf75f-webfont.ttf") format("truetype"), url("../../assets/fonts/ptf75f-webfont.svg#pt_serifbold") format("svg");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'pt_serif';
+  src: url("../../assets/fonts/ptf55f-webfont.eot");
+  src: url("../../assets/fonts/ptf55f-webfont.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/ptf55f-webfont.woff2") format("woff2"), url("../../assets/fonts/ptf55f-webfont.woff") format("woff"), url("../../assets/fonts/ptf55f-webfont.ttf") format("truetype"), url("../../assets/fonts/ptf55f-webfont.svg#pt_serifregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'pt_serif';
+  src: url("../../assets/fonts/ptf56f-webfont.eot");
+  src: url("../../assets/fonts/ptf56f-webfont.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/ptf56f-webfont.woff2") format("woff2"), url("../../assets/fonts/ptf56f-webfont.woff") format("woff"), url("../../assets/fonts/ptf56f-webfont.ttf") format("truetype"), url("../../assets/fonts/ptf56f-webfont.svg#pt_serifitalic") format("svg");
+  font-weight: normal;
+  font-style: italic; }
+
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
@@ -231,7 +273,7 @@ input,
 select,
 textarea {
   color: #404040;
-  font-family: sans-serif;
+  font-family: "pt_serif", sans-serif;
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.5; }
@@ -300,9 +342,7 @@ body {
 
 blockquote, q {
   quotes: "" ""; }
-  blockquote:before,
-  blockquote:after, q:before,
-  q:after {
+  blockquote:before, blockquote:after, q:before, q:after {
     content: ""; }
 
 hr {
@@ -358,7 +398,7 @@ input[type="submit"] {
   font-size: 12px;
   font-size: 0.75rem;
   line-height: 1;
-  padding: 0.6em 1em 0.4em;
+  padding: .6em 1em .4em;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8); }
   button:hover,
   input[type="button"]:hover,
@@ -366,8 +406,7 @@ input[type="submit"] {
   input[type="submit"]:hover {
     border-color: #ccc #bbb #aaa;
     box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 15px 17px rgba(255, 255, 255, 0.8), inset 0 -5px 12px rgba(0, 0, 0, 0.02); }
-  button:active,
-  button:focus,
+  button:active, button:focus,
   input[type="button"]:active,
   input[type="button"]:focus,
   input[type="reset"]:active,
@@ -414,14 +453,11 @@ a {
   color: royalblue; }
   a:visited {
     color: purple; }
-  a:hover,
-  a:focus,
-  a:active {
+  a:hover, a:focus, a:active {
     color: midnightblue; }
   a:focus {
     outline: thin dotted; }
-  a:hover,
-  a:active {
+  a:hover, a:active {
     outline: 0; }
 
 /* Menus */
@@ -471,9 +507,9 @@ a {
   .main-navigation ul {
     display: block; } }
 
-.site-main .comment-navigation,
-.site-main .posts-navigation,
-.site-main .post-navigation {
+.site-main .comment-navigation, .site-main
+.posts-navigation, .site-main
+.post-navigation {
   margin: 0 0 1.5em;
   overflow: hidden; }
 
@@ -657,6 +693,78 @@ object {
 
 .gallery-caption {
   display: block; }
+
+/* Global */
+html {
+  font-size: 16px; }
+
+body {
+  box-sizing: border-box; }
+
+.container {
+  padding: 0 1rem;
+  max-width: 768px;
+  margin: 0 auto; }
+
+h1 {
+  font-size: 20px;
+  font-style: "pt_serif", sans-serif;
+  color: #E3E3E3; }
+
+h2 {
+  font-style: "pt_serif", sans-serif;
+  font-size: 22px; }
+
+.site-footer {
+  background-color: black;
+  color: white;
+  text-align: center; }
+
+.front-page {
+  text-align: center; }
+  .front-page .masthead {
+    background-color: darkgrey;
+    height: 229px; }
+  .front-page .headshot {
+    background-color: navy; }
+  .front-page .skillbar-container {
+    width: 50%; }
+    .front-page .skillbar-container .skillbar {
+      position: relative;
+      display: block;
+      margin-bottom: 6px;
+      width: 100%;
+      background: #eee;
+      height: 20px;
+      border-radius: 8px;
+      transition: 0.4s linear;
+      transition-property: width, background-color; }
+    .front-page .skillbar-container span {
+      position: absolute;
+      font-weight: bold;
+      font-family: "cabin", serif;
+      font-size: 12px;
+      color: #ffffff;
+      display: block;
+      padding: 0 10px;
+      height: 20px;
+      line-height: 20px;
+      border-top-left-radius: 8px;
+      border-bottom-left-radius: 8px; }
+    .front-page .skillbar-container .skillbar-bar {
+      height: 20px;
+      width: 0px;
+      background: #6adcfa;
+      border-radius: 8px; }
+    .front-page .skillbar-container .skill-bar-percent {
+      position: absolute;
+      right: 10px;
+      top: 0;
+      font-size: 11px;
+      height: 20px;
+      line-height: 20px;
+      color: #ffffff;
+      color: rgba(0, 0, 0, 0.4); }
 
 /*--------------------------------------------------------------
 # Page Templates

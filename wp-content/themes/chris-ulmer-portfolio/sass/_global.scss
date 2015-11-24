@@ -1,0 +1,25 @@
+/* Global */
+html {
+  font-size: 16px;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+.container {
+  padding: 0 1rem;
+  max-width: 768px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 20px;
+  font-style: $font__main;
+  color: #E3E3E3;
+}
+
+h2 {
+  font-style: $font__main;
+  font-size: 22px;
+}

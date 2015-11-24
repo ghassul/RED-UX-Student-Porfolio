@@ -11,7 +11,9 @@
 
 			<footer id="colophon" class="site-footer" role="contentinfo">
 				<div class="site-info">
-					<a href="<?php echo esc_url( 'https://wordpress.org/' ); ?>"><?php printf( esc_html( 'Proudly powered by %s' ), 'WordPress' ); ?></a>
+					<p>&copy; 2015 All rights reserved.</p>
+					<p>Designed by Chris Ulmer.</p>
+					<p>Developed by Blaze Kroeger.</p>
 				</div><!-- .site-info -->
 			</footer><!-- #colophon -->
 		</div><!-- #page -->
