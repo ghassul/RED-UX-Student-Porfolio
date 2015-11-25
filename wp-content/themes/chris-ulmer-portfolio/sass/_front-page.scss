@@ -3,11 +3,22 @@
 
   .masthead {
     background-color: darkgrey;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     height: 229px;
   }
 
+  .skills {
+    display: flex;
+    justify-content: space-between;
+  }
+  
   .headshot {
     background-color: navy;
+    width: 45%;
+    border-radius: 12px;
   }
 
   .skillbar-container {
@@ -41,7 +52,7 @@
     }
     .skillbar-bar {
       height:20px;
-      width:0px;
+      width:0;
       background:#6adcfa;
       border-radius:8px;
     }
@@ -56,5 +67,22 @@
       color:#ffffff;
       color:rgba(0, 0, 0, 0.4);
     }
+  }
+
+  .image-break {
+    height: 229px;
+    width: 100%;
+  }
+
+  .placeholder-container {
+    display: flex;
+    height: 188px;
+    margin-bottom: 1.5rem;
+  }
+
+  .placeholder {
+    width: 50%;
+    background-color: darkcyan;
+    border: 1px solid black;
   }
 }

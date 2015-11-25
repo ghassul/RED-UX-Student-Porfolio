@@ -713,7 +713,25 @@ h1 {
 
 h2 {
   font-style: "pt_serif", sans-serif;
-  font-size: 22px; }
+  font-size: 22px;
+  color: #696969; }
+
+.btn, p > .wpcf7-submit {
+  font-size: 14px;
+  font-family: "cabin", serif;
+  color: white;
+  padding: .5rem  2.5rem;
+  background-color: #66DAE0;
+  border-radius: 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  border: none;
+  box-shadow: none;
+  text-shadow: none; }
+
+a:visited {
+  color: white; }
 
 .site-footer {
   background-color: black;
@@ -724,9 +742,28 @@ h2 {
   text-align: center; }
   .front-page .masthead {
     background-color: darkgrey;
+    width: 100%;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     height: 229px; }
+  .front-page .skills {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
   .front-page .headshot {
-    background-color: navy; }
+    background-color: navy;
+    width: 45%;
+    border-radius: 12px; }
   .front-page .skillbar-container {
     width: 50%; }
     .front-page .skillbar-container .skillbar {
@@ -753,7 +790,7 @@ h2 {
       border-bottom-left-radius: 8px; }
     .front-page .skillbar-container .skillbar-bar {
       height: 20px;
-      width: 0px;
+      width: 0;
       background: #6adcfa;
       border-radius: 8px; }
     .front-page .skillbar-container .skill-bar-percent {
@@ -765,6 +802,19 @@ h2 {
       line-height: 20px;
       color: #ffffff;
       color: rgba(0, 0, 0, 0.4); }
+  .front-page .image-break {
+    height: 229px;
+    width: 100%; }
+  .front-page .placeholder-container {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    height: 188px;
+    margin-bottom: 1.5rem; }
+  .front-page .placeholder {
+    width: 50%;
+    background-color: darkcyan;
+    border: 1px solid black; }
 
 /*--------------------------------------------------------------
 # Page Templates

@@ -5,13 +5,13 @@
  * @package RED_Starter_Theme
  */
 get_header(); ?>
-<div class="front-page container">
+<div class="front-page">
 
     <section class="masthead">
         <h1>just a guy hoping to make your online experience more enjoyable.</h1>
     </section>
 
-    <section class="about-me">
+    <section class="about-me container">
 
         <h2>Hi I'm Chris!</h2>
 
@@ -28,7 +28,7 @@ get_header(); ?>
             </p>
         </div>
 
-        <div>
+        <div class="skills">
             <div class="headshot"></div>
 
             <div class="skillbar-container">
@@ -48,14 +48,14 @@ get_header(); ?>
                     <div class="skill-bar-percent">50%</div>
                 </div> <!-- End Skill Bar -->
 
-                <div class="skillbar" data-percent="60%">
+                <div class="skillbar" data-percent="80%">
                     <div class="skillbar-bar" style="background: #531E8B;"><span>Digital Prototyping</span></div>
-                    <div class="skill-bar-percent">60%</div>
+                    <div class="skill-bar-percent">80%</div>
                 </div> <!-- End Skill Bar -->
 
-                <div class="skillbar" data-percent="80%">
+                <div class="skillbar" data-percent="60%">
                     <div class="skillbar-bar" style="background: #951D16;"><span>Coding</span></div>
-                    <div class="skill-bar-percent">80%</div>
+                    <div class="skill-bar-percent">60%</div>
                 </div> <!-- End Skill Bar -->
 
                 <div class="skillbar" data-percent="90%">
@@ -73,27 +73,36 @@ get_header(); ?>
 
         <h3>Wanna learn more about me?</h3>
 
-        <a href="#">My Story</a>
+        <a href="#" class="btn">My Story</a>
 
         <p>Continue to portfolio</p>
 
     </section>
 
-    <div></div>
+    <div class="masthead"></div>
 
     <section class="my-work">
 
-        <div></div>
-        <div></div>
+        <h2>My Work</h2>
+
+        <div class="placeholder-container">
+            <div class="placeholder"></div>
+            <div class="placeholder"></div>
+        </div>
+
+        <div class="placeholder-container">
+            <div class="placeholder"></div>
+            <div class="placeholder"></div>
+        </div>
 
     </section>
 
-    <section class="contact">
+    <section class="contact container">
 
         <h2>Contact</h2>
         <h3>I would like to have a chat with you!</h3>
 
-        <form action="#"></form>
+        <?php echo do_shortcode('[contact-form-7 id="4" title="Contact form 1"]') ?>
 
         <h3>Shall we dance on the web-floor?</h3>
         
