@@ -113,17 +113,51 @@
     width: 100%;
   }
 
-  .placeholder-container {
-    display: flex;
-    height: 188px;
-    margin-bottom: 1.5rem;
+  /* Bx Slider */
+  .bx-wrapper{
+
+    img {
+      width: 100vw;
+    }
+
+    .bx-viewport
+    {
+      box-shadow: none;
+      border: 0;
+      left: 0;
+      background: #fff;
+    }
+
+    .bx-controls-direction{
+
+      a {
+        text-indent: 0px;
+
+      }
+
+      i {
+        color: black;
+        font-size: 2rem;
+      }
+    }
+
+    .bx-prev {
+      background: none;
+    }
+
+    .bx-next {
+      background: none;
+    }
   }
 
-  .placeholder {
-    width: 50%;
-    background-color: darkcyan;
-    border: 1px solid black;
+  .bxslider {
+    margin:0 !important;
+
+    li, img {
+      width: 50vw !important;
+    }
   }
+
 
   .wpcf7-form {
     text-align: left;

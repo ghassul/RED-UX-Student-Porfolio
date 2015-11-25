@@ -89,15 +89,45 @@ get_header(); ?>
 
         <h2>My Work</h2>
 
-        <div class="placeholder-container">
-            <div class="placeholder"></div>
-            <div class="placeholder"></div>
-        </div>
+        <ul class="bxslider">
 
-        <div class="placeholder-container">
-            <div class="placeholder"></div>
-            <div class="placeholder"></div>
-        </div>
+            <li>
+                <a href="#">
+                    <img src="<?php echo get_template_directory_uri() . '/assets/images/dish.jpg' ?>" />
+                    <div>
+                        <p><span>UX Design</span></p>
+                    </div>
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <img src="<?php echo get_template_directory_uri() . '/assets/images/herbs.jpg' ?>" />
+                    <div>
+                        <p><span>UX Design</span></p>
+                    </div>
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <img src="<?php echo get_template_directory_uri() . '/assets/images/juice.jpg' ?>" />
+                    <div>
+                        <p><span>UX Design</span></p>
+                    </div>
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <img src="<?php echo get_template_directory_uri() . '/assets/images/sweet-cakes.jpg' ?>" />
+                    <div>
+                        <p><span>UX Design</span></p>
+                    </div>
+                </a>
+            </li>
+
+        </ul>
 
     </section>
 

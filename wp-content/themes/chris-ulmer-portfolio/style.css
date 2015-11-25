@@ -748,7 +748,8 @@ a:visited {
     margin: 0 0 .1rem; }
 
 .front-page {
-  text-align: center; }
+  text-align: center;
+  /* Bx Slider */ }
   .front-page .masthead {
     background-color: darkgrey;
     width: 100%;
@@ -829,16 +830,26 @@ a:visited {
   .front-page .image-break {
     height: 229px;
     width: 100%; }
-  .front-page .placeholder-container {
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    height: 188px;
-    margin-bottom: 1.5rem; }
-  .front-page .placeholder {
-    width: 50%;
-    background-color: darkcyan;
-    border: 1px solid black; }
+  .front-page .bx-wrapper img {
+    width: 100vw; }
+  .front-page .bx-wrapper .bx-viewport {
+    box-shadow: none;
+    border: 0;
+    left: 0;
+    background: #fff; }
+  .front-page .bx-wrapper .bx-controls-direction a {
+    text-indent: 0px; }
+  .front-page .bx-wrapper .bx-controls-direction i {
+    color: black;
+    font-size: 2rem; }
+  .front-page .bx-wrapper .bx-prev {
+    background: none; }
+  .front-page .bx-wrapper .bx-next {
+    background: none; }
+  .front-page .bxslider {
+    margin: 0 !important; }
+    .front-page .bxslider li, .front-page .bxslider img {
+      width: 50vw !important; }
   .front-page .wpcf7-form {
     text-align: left; }
     .front-page .wpcf7-form .wpcf7-text, .front-page .wpcf7-form .wpcf7-email, .front-page .wpcf7-form textarea {
