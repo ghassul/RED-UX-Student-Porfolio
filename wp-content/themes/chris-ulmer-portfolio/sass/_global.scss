@@ -5,6 +5,7 @@ html {
 
 body {
   box-sizing: border-box;
+  color: #696969;
 }
 
 .container {
@@ -14,15 +15,20 @@ body {
 }
 
 h1 {
+  font-family: $font__main;
   font-size: 20px;
-  font-style: $font__main;
   color: #E3E3E3;
 }
 
 h2 {
-  font-style: $font__main;
+  font-family: $font__main;
   font-size: 22px;
-  color: #696969;
+}
+
+h3 {
+  font-family: $font__main;
+  font-size: 18px;
+
 }
 
 .btn, p>.wpcf7-submit {

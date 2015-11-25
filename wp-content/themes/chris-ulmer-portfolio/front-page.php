@@ -75,7 +75,11 @@ get_header(); ?>
 
         <a href="#" class="btn">My Story</a>
 
-        <p>Continue to portfolio</p>
+        <div class="continue">
+            <p class="continue">Continue to portfolio</p>
+            <i class="fa fa-angle-double-down"></i>
+        </div>
+
 
     </section>
 
@@ -105,6 +109,12 @@ get_header(); ?>
         <?php echo do_shortcode('[contact-form-7 id="4" title="Contact form 1"]') ?>
 
         <h3>Shall we dance on the web-floor?</h3>
+
+        <div class="icons-container">
+            <div><i class="fa fa-linkedin fa-2x"></i></div>
+            <div><i class="fa fa-twitter fa-2x"></i></div>
+            <div><i class="fa fa-at fa-2x"></i></div>
+        </div>
         
     </section>
 </div>

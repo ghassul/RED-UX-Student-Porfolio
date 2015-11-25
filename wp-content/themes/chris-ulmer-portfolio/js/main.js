@@ -5,4 +5,7 @@ jQuery(document).ready(function(){
             width:jQuery(this).attr('data-percent')
         },3000);
     });
+
+    $('.bxslider').bxSlider();
+    
 });
