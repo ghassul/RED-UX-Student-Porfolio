@@ -59,7 +59,7 @@ gulp.task('browser-sync', function() {
     ];
 
     browserSync.init(files, {
-        proxy: 'localhost/chris-ulmer-portfolio/',
+        proxy: 'localhost/chris-ulmer-portfolio'
     });
 });
 

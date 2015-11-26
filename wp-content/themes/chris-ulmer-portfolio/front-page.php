@@ -29,7 +29,7 @@ get_header(); ?>
         </div>
 
         <div class="skills">
-            <div class="headshot"></div>
+            <img src="<?php echo get_template_directory_uri() . '/assets/images/selfie.jpg' ?>" alt="" class="headshot">
 
             <div class="skillbar-container">
 
@@ -83,7 +83,7 @@ get_header(); ?>
 
     </section>
 
-    <div class="masthead"></div>
+    <div class="image-break"></div>
 
     <section class="my-work">
 
@@ -93,36 +93,36 @@ get_header(); ?>
 
             <li>
                 <a href="#">
-                    <img src="<?php echo get_template_directory_uri() . '/assets/images/dish.jpg' ?>" />
+                    <img src="<?php echo get_template_directory_uri() . '/assets/images/protothumb.jpg' ?>" />
                     <div>
-                        <p><span>UX Design</span></p>
+                        <p><span>Free The Children</span><br>UX Design</p>
                     </div>
                 </a>
             </li>
 
             <li>
                 <a href="#">
-                    <img src="<?php echo get_template_directory_uri() . '/assets/images/herbs.jpg' ?>" />
+                    <img src="<?php echo get_template_directory_uri() . '/assets/images/protothumb.jpg' ?>" />
                     <div>
-                        <p><span>UX Design</span></p>
+                        <p><span>Taski</span><br>UX Design</p>
                     </div>
                 </a>
             </li>
 
             <li>
                 <a href="#">
-                    <img src="<?php echo get_template_directory_uri() . '/assets/images/juice.jpg' ?>" />
+                    <img src="<?php echo get_template_directory_uri() . '/assets/images/tourismthumb.png' ?>" />
                     <div>
-                        <p><span>UX Design</span></p>
+                        <p><span>Tourism Vancouver*</span><br>UX Design</p>
                     </div>
                 </a>
             </li>
 
             <li>
                 <a href="#">
-                    <img src="<?php echo get_template_directory_uri() . '/assets/images/sweet-cakes.jpg' ?>" />
+                    <img src="<?php echo get_template_directory_uri() . '/assets/images/MECthumb.png' ?>" />
                     <div>
-                        <p><span>UX Design</span></p>
+                        <p><span>MEC*</span><br>UX Design</p>
                     </div>
                 </a>
             </li>
@@ -141,9 +141,9 @@ get_header(); ?>
         <h3>Shall we dance on the web-floor?</h3>
 
         <div class="icons-container">
-            <div><i class="fa fa-linkedin fa-2x"></i></div>
-            <div><i class="fa fa-twitter fa-2x"></i></div>
-            <div><i class="fa fa-at fa-2x"></i></div>
+            <div class="linkedin"><i class="fa fa-linkedin fa-2x"></i></div>
+            <div class="twitter"><i class="fa fa-twitter fa-2x"></i></div>
+            <div class="at-symbol"><i class="fa fa-at fa-2x"></i></div>
         </div>
         
     </section>
