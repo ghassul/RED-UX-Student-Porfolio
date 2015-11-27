@@ -10,28 +10,53 @@ body {
 
 .container {
   padding: 0 1rem;
-  max-width: 768px;
   margin: 0 auto;
+}
+
+/* Helps images/videos scale properly */
+img, video {
+  max-width: 100%;
+  height: auto;
 }
 
 h1 {
   font-family: $font__main;
   font-size: 20px;
   color: #E3E3E3;
+
+  @include desktop {
+    font-size: 6rem;
+  }
 }
 
 h2 {
   font-family: $font__main;
   font-size: 22px;
+
+  @include desktop {
+    font-size: 6rem;
+    margin: 1rem;
+
+  }
 }
 
 h3 {
   font-family: $font__main;
   font-size: 18px;
 
+  @include desktop {
+    font-size: 2.2rem;
+    margin-top: .5rem;
+  }
 }
 
-.btn, p>.wpcf7-submit {
+p {
+  @include desktop {
+    font-size: 1.7rem;
+  }
+}
+
+.btn, p>.wpcf7-submit, p>.wpcf7-submit:hover {
   font-size: 14px;
   font-family: $font__accent;
   color: white;

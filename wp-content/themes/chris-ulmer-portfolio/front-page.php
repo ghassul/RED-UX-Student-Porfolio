@@ -15,20 +15,22 @@ get_header(); ?>
 
         <h2>Hi I'm Chris!</h2>
 
-        <div class="self-description">
-            <p>
-                Blurb Blurb Blurb Blurb Blurb Blurb Blurb Blurb
-                Blurb Blurb Blurb Blurb Blurb Blurb Blurb Blurb
-                Blurb Blurb Blurb Blurb Blurb Blurb Blurb Blurb
-            </p>
-            <p>
-                Blurb Blurb Blurb Blurb Blurb Blurb Blurb Blurb
-                Blurb Blurb Blurb Blurb Blurb Blurb Blurb Blurb
-                Blurb Blurb Blurb Blurb Blurb Blurb Blurb Blurb
-            </p>
-        </div>
+        <div class="self-container">
 
-        <div class="skills">
+            <div class="self-description">
+                <p>
+                    Blurb Blurb Blurb Blurb Blurb Blurb Blurb Blurb
+                    Blurb Blurb Blurb Blurb Blurb Blurb Blurb Blurb
+                    Blurb Blurb Blurb Blurb Blurb Blurb Blurb Blurb
+                </p>
+                <p>
+                    Blurb Blurb Blurb Blurb Blurb Blurb Blurb Blurb
+                    Blurb Blurb Blurb Blurb Blurb Blurb Blurb Blurb
+                    Blurb Blurb Blurb Blurb Blurb Blurb Blurb Blurb
+                </p>
+            </div>
+
+
             <img src="<?php echo get_template_directory_uri() . '/assets/images/selfie.jpg' ?>" alt="" class="headshot">
 
             <div class="skillbar-container">
@@ -70,7 +72,6 @@ get_header(); ?>
 
             </div>
         </div>
-
         <h3>Wanna learn more about me?</h3>
 
         <a href="#" class="btn">My Story</a>
@@ -141,9 +142,9 @@ get_header(); ?>
         <h3>Shall we dance on the web-floor?</h3>
 
         <div class="icons-container">
-            <div class="linkedin"><i class="fa fa-linkedin fa-2x"></i></div>
-            <div class="twitter"><i class="fa fa-twitter fa-2x"></i></div>
-            <div class="at-symbol"><i class="fa fa-at fa-2x"></i></div>
+            <a href="https://www.linkedin.com/in/ulmerchris"><div class="linkedin"><i class="fa fa-linkedin fa-2x"></i></div></a>
+            <a href="https://twitter.com/thechrisulmer"><div class="twitter"><i class="fa fa-twitter fa-2x"></i></div></a>
+            <a href=""><div class="at-symbol"><i class="fa fa-at fa-2x"></i></div></a>
         </div>
         
     </section>
