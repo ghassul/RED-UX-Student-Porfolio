@@ -1789,7 +1789,7 @@ h3 {
   font-size: 18px; }
   @media (min-width: 1280px) {
     h3 {
-      font-size: 2.2rem;
+      font-size: 2rem;
       margin-top: .5rem; } }
 
 @media (min-width: 1280px) {
@@ -1813,15 +1813,63 @@ h3 {
 a:visited {
   color: white; }
 
+.main-navigation {
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  left: 0;
+  padding: 1rem 2rem;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "cabin", serif;
+  color: white; }
+
+.fixed-nav {
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.8); }
+
+@media only screen and (min-width: 600px) {
+  .fixed-nav.under-admin-bar {
+    top: 46px; } }
+
+@media only screen and (min-width: 768px) {
+  .fixed-nav.under-admin-bar {
+    top: 32px; } }
+
+.header-name {
+  margin: 0;
+  font-size: 1.5rem;
+  font-family: "cabin", serif; }
+
 .site-footer {
   background-color: black;
   color: white;
   text-align: center; }
   .site-footer .site-info {
     padding: 1.5rem; }
+    @media (min-width: 1280px) {
+      .site-footer .site-info {
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-justify-content: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        padding: 3rem; } }
   .site-footer p {
     font-size: 12px;
     margin: 0 0 .1rem; }
+    @media (min-width: 1280px) {
+      .site-footer p {
+        font-size: 1.3rem;
+        margin: 0 .5rem; } }
 
 .front-page {
   text-align: center;
@@ -1858,28 +1906,38 @@ a:visited {
         -webkit-flex-wrap: nowrap;
             -ms-flex-wrap: nowrap;
                 flex-wrap: nowrap; } }
+  .front-page .self-description {
+    width: 100%; }
+    .front-page .self-description p {
+      margin-top: 0; }
+    @media (min-width: 1280px) {
+      .front-page .self-description {
+        -webkit-order: 2;
+            -ms-flex-order: 2;
+                order: 2;
+        width: 37%;
+        margin: 0 2%; } }
   @media (min-width: 1280px) {
-    .front-page .self-description {
-      -webkit-order: 2;
-          -ms-flex-order: 2;
-              order: 2; } }
+    .front-page .headshot-container {
+      -webkit-order: 1;
+          -ms-flex-order: 1;
+              order: 1;
+      width: 29%; } }
   .front-page .headshot {
     height: 207px;
     border-radius: 12px; }
     @media (min-width: 1280px) {
       .front-page .headshot {
-        -webkit-order: 1;
-            -ms-flex-order: 1;
-                order: 1;
-        height: 380px;
-        width: 280px; } }
+        height: 380px; } }
   .front-page .skillbar-container {
     width: 50%; }
     @media (min-width: 1280px) {
       .front-page .skillbar-container {
         -webkit-order: 3;
             -ms-flex-order: 3;
-                order: 3; } }
+                order: 3;
+        width: 29%;
+        padding: 0 2%; } }
     .front-page .skillbar-container .skillbar {
       position: relative;
       display: block;
@@ -1889,6 +1947,11 @@ a:visited {
       border-radius: 8px;
       transition: 0.4s linear;
       transition-property: width, background-color; }
+      @media (min-width: 1280px) {
+        .front-page .skillbar-container .skillbar {
+          height: 40px;
+          margin-bottom: 14px;
+          border-radius: 14px; } }
     .front-page .skillbar-container span {
       position: absolute;
       font-weight: bold;
@@ -1897,20 +1960,19 @@ a:visited {
       color: #ffffff;
       display: block;
       padding: 0 4px;
-      height: 20px;
       line-height: 20px; }
+      @media (min-width: 1280px) {
+        .front-page .skillbar-container span {
+          line-height: 36px;
+          font-size: 1.4rem; } }
     .front-page .skillbar-container .skillbar-bar {
       height: 21px;
       width: 0;
       border-radius: 5px; }
-    .front-page .skillbar-container .skill-bar-percent {
-      position: absolute;
-      right: 10px;
-      top: 0;
-      font-size: 11px;
-      height: 20px;
-      line-height: 20px;
-      color: transparent; }
+      @media (min-width: 1280px) {
+        .front-page .skillbar-container .skillbar-bar {
+          height: 37px;
+          border-radius: 10px; } }
   .front-page .skillbar:first-child {
     border: 2px solid #228B1E; }
   .front-page .skillbar:nth-child(2) {
@@ -1970,7 +2032,7 @@ a:visited {
       position: relative; }
     .front-page .bx-wrapper a div {
       position: absolute;
-      top: 11.5rem;
+      top: 100%;
       left: 0;
       bottom: 0;
       right: 0;
@@ -2003,6 +2065,23 @@ a:visited {
       @media (min-width: 1280px) {
         .front-page .bxslider li, .front-page .bxslider img {
           width: 23vw !important; } }
+  @media (min-width: 1280px) {
+    .front-page .contact {
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-wrap: wrap;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap;
+      -webkit-justify-content: space-around;
+          -ms-flex-pack: distribute;
+              justify-content: space-around; } }
+  @media (min-width: 1280px) {
+    .front-page .contact h2 {
+      width: 100%; } }
+  @media (min-width: 1280px) {
+    .front-page .contact-form {
+      width: 45%; } }
   .front-page .wpcf7-form {
     text-align: left; }
     .front-page .wpcf7-form .wpcf7-text, .front-page .wpcf7-form .wpcf7-email, .front-page .wpcf7-form textarea {
@@ -2010,9 +2089,15 @@ a:visited {
       font-family: "cabin", serif;
       width: 100%;
       border: 2px solid #ccc; }
+    @media (min-width: 1280px) {
+      .front-page .wpcf7-form .wpcf7-text, .front-page .wpcf7-form .wpcf7-email {
+        width: 50%; } }
     .front-page .wpcf7-form textarea {
       height: 100px;
       resize: none; }
+  @media (min-width: 1280px) {
+    .front-page .socials {
+      width: 45%; } }
   .front-page .icons-container {
     margin: 0 auto;
     width: 75%;

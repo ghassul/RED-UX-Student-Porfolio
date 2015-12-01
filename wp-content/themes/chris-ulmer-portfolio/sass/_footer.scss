@@ -5,10 +5,21 @@
 
   .site-info {
     padding: 1.5rem;
+
+    @include desktop {
+      display: flex;
+      justify-content: center;
+      padding: 3rem;
+    }
   }
 
   p {
     font-size: 12px;
     margin: 0 0 .1rem;
+
+    @include desktop {
+      font-size: 1.3rem;
+      margin: 0 .5rem;
+    }
   }
 }

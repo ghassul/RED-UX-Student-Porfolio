@@ -26,28 +26,42 @@
   }
 
   .self-description{
+    width: 100%;
+
+    p {
+      margin-top: 0;
+    }
 
     @include desktop {
       order: 2;
+      width: 37%;
+      margin: 0 2%;
     }
   }
-  
+
+  .headshot-container {
+    @include desktop {
+      order: 1;
+      width: 29%;
+    }
+  }
+
   .headshot {
     height: 207px;
     border-radius: 12px;
 
     @include desktop {
-      order: 1;
       height: 380px;
-      width: 280px;
     }
-  }
+}
 
   .skillbar-container {
     width: 50%;
 
     @include desktop {
       order: 3;
+      width: 29%;
+      padding: 0 2%;
     }
 
     .skillbar {
@@ -55,11 +69,16 @@
       display:block;
       margin-bottom:6px;
       width:100%;
-      //background:#eee;
       height:24px;
       border-radius:8px;
       transition:0.4s linear;
       transition-property:width, background-color;
+
+      @include desktop {
+        height: 40px;
+        margin-bottom: 14px;
+        border-radius: 14px;
+      }
     }
 
     span {
@@ -70,27 +89,23 @@
       color:#ffffff;
       display:block;
       padding:0 4px;
-      height:20px;
       line-height:20px;
-      //border-top-left-radius:8px;
-      //border-bottom-left-radius:8px;
+
+      @include desktop {
+        line-height: 36px;
+        font-size: 1.4rem;
+      }
     }
+
     .skillbar-bar {
       height:21px;
       width:0;
       border-radius:5px;
-    }
 
-    .skill-bar-percent {
-      position:absolute;
-      right:10px;
-      top:0;
-      font-size:11px;
-      height:20px;
-      line-height:20px;
-      //
-      color: transparent;
-      //color:rgba(0, 0, 0, 0.4);
+      @include desktop {
+        height: 37px;
+        border-radius: 10px;
+      }
     }
   }
 
@@ -200,7 +215,7 @@
 
       div {
         position: absolute;
-        top: 11.5rem;
+        top: 100%;
         left: 0;
         bottom: 0;
         right: 0;
@@ -244,6 +259,25 @@
     }
   }
 
+  .contact {
+    @include desktop {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+
+    h2 {
+      @include desktop {
+        width: 100%;
+      }
+    }
+  }
+
+  .contact-form {
+    @include desktop {
+      width: 45%;
+    }
+  }
 
   .wpcf7-form {
     text-align: left;
@@ -255,9 +289,21 @@
       border: 2px solid #ccc;
     }
 
+    .wpcf7-text, .wpcf7-email {
+      @include desktop {
+        width: 50%;
+      }
+    }
+
     textarea {
       height: 100px;
       resize: none;
+    }
+  }
+
+  .socials {
+    @include desktop {
+      width: 45%;
     }
   }
 

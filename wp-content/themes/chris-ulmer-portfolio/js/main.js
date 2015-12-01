@@ -18,5 +18,35 @@ jQuery(document).ready(function(){
         prevText: '<i class="fa fa-angle-double-left"></i>'
 
     });
+    
+    var $window = $(window),
+        $mainNav = $('.main-navigation'), // nav wrapper element
+        stickyNavTop = $mainNav.offset().top;
+    
+    // A helper function to check whether nav should be fixed
+    var stickyNav = function () {
+        var scrollTop = $window.scrollTop();
 
+        if ( scrollTop > stickyNavTop ) {
+            if ( $('body').hasClass('logged-in') ) {
+                $mainNav.addClass('under-admin-bar fixed-nav');
+            } else {
+                $mainNav.addClass('fixed-nav');
+            }
+        } else {
+            if ( $('body').hasClass('logged-in') ) {
+                $mainNav.removeClass('under-admin-bar fixed-nav');
+            } else {
+                $mainNav.removeClass('fixed-nav');
+            }
+        }
+    };
+    
+    // Initialize nav classes...
+    stickyNav();
+    
+    // Then re-run on scroll
+    $window.scroll(function () {
+        stickyNav();
+    });
 });
