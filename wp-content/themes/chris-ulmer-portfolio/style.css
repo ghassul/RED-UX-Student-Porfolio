@@ -2042,22 +2042,24 @@ a:visited {
       color: #696969; }
       @media (min-width: 1280px) {
         .front-page .bx-wrapper a div {
-          display: none;
-          background: rgba(0, 0, 0, 0.6);
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-justify-content: center;
+              -ms-flex-pack: center;
+                  justify-content: center;
+          -webkit-flex-direction: column;
+              -ms-flex-direction: column;
+                  flex-direction: column;
+          background: transparent;
           padding: 20px;
           top: 0;
-          color: #ddd; } }
+          color: transparent;
+          transition: all 0.2s ease; } }
     @media (min-width: 1280px) {
       .front-page .bx-wrapper a:hover div {
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-justify-content: center;
-            -ms-flex-pack: center;
-                justify-content: center;
-        -webkit-flex-direction: column;
-            -ms-flex-direction: column;
-                flex-direction: column; } }
+        background: rgba(0, 0, 0, 0.6);
+        color: #ddd; } }
   .front-page .bxslider {
     margin: 0 !important; }
     @media (min-width: 1280px) {

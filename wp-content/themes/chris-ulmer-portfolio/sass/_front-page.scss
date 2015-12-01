@@ -197,8 +197,6 @@
     }
 
     a {
-
-
       div {
         position: absolute;
         top: 100%;
@@ -209,20 +207,22 @@
 
 
         @include desktop {
-          display: none;
-          background: rgba(0,0,0,0.6);
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          background: transparent;
           padding: 20px;
           top: 0;
-          color: #ddd;
+          color: transparent;
+          transition: all 0.2s ease;
         }
       }
     }
 
     a:hover div {
       @include desktop {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
+        background: rgba(0,0,0,0.6);
+        color: #ddd;
       }
     }
   }
