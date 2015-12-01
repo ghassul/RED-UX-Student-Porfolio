@@ -21,13 +21,14 @@ jQuery(document).ready(function(){
     
     var $window = $(window),
         $mainNav = $('.main-navigation'), // nav wrapper element
-        stickyNavTop = $mainNav.offset().top;
+        $mastHead = $('.site-header'), // site header element
+        headerHeightOffset = $mastHead.height() - $mainNav.height(),
+        stickyNavTop = $mainNav.scrollTop() + headerHeightOffset;
     
     // A helper function to check whether nav should be fixed
     var stickyNav = function () {
         var scrollTop = $window.scrollTop();
-
-        if ( scrollTop > stickyNavTop ) {
+        if ( scrollTop > stickyNavTop) {
             if ( $('body').hasClass('logged-in') ) {
                 $mainNav.addClass('under-admin-bar fixed-nav');
             } else {

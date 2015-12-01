@@ -8,9 +8,7 @@
 get_header(); ?>
 <div class="front-page">
 
-    <section class="masthead">
-        <h1><?php echo esc_html( CFS()->get( 'site_header' ) ); ?></h1>
-    </section>
+
 
     <section class="about-me container">
 

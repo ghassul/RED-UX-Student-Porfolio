@@ -1813,6 +1813,25 @@ h3 {
 a:visited {
   color: white; }
 
+.masthead {
+  background: url("../../assets/images/abovetheclouds.jpg") no-repeat center center/cover;
+  width: 100%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 229px;
+  text-align: center; }
+  @media (min-width: 1280px) {
+    .masthead {
+      height: 800px;
+      background-attachment: fixed; } }
+
 .main-navigation {
   position: fixed;
   width: 100%;
@@ -1829,7 +1848,8 @@ a:visited {
       -ms-flex-align: center;
           align-items: center;
   font-family: "cabin", serif;
-  color: white; }
+  color: white;
+  transition: all 0.6s ease; }
 
 .fixed-nav {
   top: 0;
@@ -1874,23 +1894,6 @@ a:visited {
 .front-page {
   text-align: center;
   /* Bx Slider */ }
-  .front-page .masthead {
-    background: url("../../assets/images/abovetheclouds.jpg") no-repeat center center/cover;
-    width: 100%;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    height: 229px; }
-    @media (min-width: 1280px) {
-      .front-page .masthead {
-        height: 800px;
-        background-attachment: fixed; } }
   .front-page .self-container {
     display: -webkit-flex;
     display: -ms-flexbox;
