@@ -8,7 +8,38 @@
 get_header(); ?>
 <div class="front-page">
 
+    <section class="my-work">
 
+        <h2>My Work</h2>
+
+        <ul class="bxslider">
+
+            <?php
+
+            $case_study_args = array( 'post_type' => 'case-study' );
+            $loop = new WP_Query( $case_study_args );
+
+            while ( $loop->have_posts() ) : $loop->the_post(); ?>
+
+
+                <li>
+                    <a href="<?php the_permalink(); ?>">
+                        <?php if ( has_post_thumbnail() ) : ?>
+                            <?php the_post_thumbnail( 'medium' ); ?>
+                        <?php endif; ?>
+                        <div>
+                            <p><?php the_title( '<span>', '</span>' ); ?><br>UX Design</p>
+                        </div>
+                    </a>
+                </li>
+
+            <?php endwhile; ?>
+            <?php wp_reset_query(); ?>
+
+
+        </ul>
+
+    </section>
 
     <section class="about-me container">
 
@@ -28,92 +59,38 @@ get_header(); ?>
             <div class="skillbar-container">
 
                 <div class="skillbar" data-percent="65%">
-                    <div class="skillbar-bar" style="background: #228B1E;"><span>Research</span></div>
-                </div> <!-- End Skill Bar -->
+                    <div class="skillbar-bar"><span>Research</span></div>
+                </div>
 
                 <div class="skillbar" data-percent="70%">
-                    <div class="skillbar-bar" style="background: #2AA2AD;"><span>Wireframing</span></div>
-                </div> <!-- End Skill Bar -->
+                    <div class="skillbar-bar"><span>Wireframing</span></div>
+                </div>
 
                 <div class="skillbar" data-percent="50%">
-                    <div class="skillbar-bar" style="background: #1A6689;"><span>Visual Design</span></div>
-                </div> <!-- End Skill Bar -->
+                    <div class="skillbar-bar"><span>Visual Design</span></div>
+                </div>
 
                 <div class="skillbar" data-percent="80%">
-                    <div class="skillbar-bar" style="background: #531E8B;"><span>Digital Prototyping</span></div>
-                </div> <!-- End Skill Bar -->
+                    <div class="skillbar-bar"><span>Digital Prototyping</span></div>
+                </div>
 
                 <div class="skillbar" data-percent="60%">
-                    <div class="skillbar-bar" style="background: #951D16;"><span>Coding</span></div>
-                </div> <!-- End Skill Bar -->
+                    <div class="skillbar-bar"><span>Coding</span></div>
+                </div>
 
                 <div class="skillbar" data-percent="90%">
-                    <div class="skillbar-bar" style="background: #B97C17;"><span>User Testing</span></div>
-                </div> <!-- End Skill Bar -->
+                    <div class="skillbar-bar"><span>User Testing</span></div>
+                </div>
 
                 <div class="skillbar" data-percent="95%">
-                    <div class="skillbar-bar" style="background: #CBBF29;"><span>Sales and Presenting</span></div>
-                </div> <!-- End Skill Bar -->
+                    <div class="skillbar-bar"><span>Sales and Presenting</span></div>
+                </div>
 
             </div>
         </div>
         <h3>Wanna learn more about me?</h3>
 
-        <a href="#" class="btn">My Story</a>
-
-        <div class="continue">
-            <p class="continue">Continue to portfolio</p>
-            <i class="fa fa-angle-double-down"></i>
-        </div>
-
-
-    </section>
-
-    <div class="image-break"></div>
-
-    <section class="my-work">
-
-        <h2>My Work</h2>
-
-        <ul class="bxslider">
-
-            <li>
-                <a href="#">
-                    <img src="<?php echo get_template_directory_uri() . '/assets/images/protothumb.jpg' ?>" />
-                    <div>
-                        <p><span>Free The Children</span><br>UX Design</p>
-                    </div>
-                </a>
-            </li>
-
-            <li>
-                <a href="#">
-                    <img src="<?php echo get_template_directory_uri() . '/assets/images/protothumb.jpg' ?>" />
-                    <div>
-                        <p><span>Taski</span><br>UX Design</p>
-                    </div>
-                </a>
-            </li>
-
-            <li>
-                <a href="#">
-                    <img src="<?php echo get_template_directory_uri() . '/assets/images/tourismthumb.png' ?>" />
-                    <div>
-                        <p><span>Tourism Vancouver*</span><br>UX Design</p>
-                    </div>
-                </a>
-            </li>
-
-            <li>
-                <a href="#">
-                    <img src="<?php echo get_template_directory_uri() . '/assets/images/MECthumb.png' ?>" />
-                    <div>
-                        <p><span>MEC*</span><br>UX Design</p>
-                    </div>
-                </a>
-            </li>
-
-        </ul>
+        <a href="#" class="btn contact-link">Contact Me</a>
 
     </section>
 
@@ -132,7 +109,7 @@ get_header(); ?>
             <div class="icons-container">
                 <a href="https://www.linkedin.com/in/ulmerchris"><div class="linkedin"><i class="fa fa-linkedin fa-2x"></i></div></a>
                 <a href="https://twitter.com/thechrisulmer"><div class="twitter"><i class="fa fa-twitter fa-2x"></i></div></a>
-                <a href=""><div class="at-symbol"><i class="fa fa-at fa-2x"></i></div></a>
+                <a href=""><div class="instagram"><i class="fa fa-instagram fa-2x"></i></div></a>
             </div>
         </div>
 
@@ -140,4 +117,4 @@ get_header(); ?>
     </section>
 </div>
 
-<?php get_footer() ?>
+<?php get_footer(); ?>

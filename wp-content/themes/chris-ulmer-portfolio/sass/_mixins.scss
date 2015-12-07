@@ -23,3 +23,9 @@
 		@content;
 	}
 }
+
+@mixin social-links-desktop {
+	border-color: black;
+	background-color: white;
+	color: black;
+}

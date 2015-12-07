@@ -1799,9 +1799,7 @@ h3 {
 .btn, p > .wpcf7-submit, p > .wpcf7-submit:hover {
   font-size: 14px;
   font-family: "cabin", serif;
-  color: white;
   padding: .5rem  2.5rem;
-  background-color: #66DAE0;
   border-radius: 10px;
   text-decoration: none;
   text-transform: uppercase;
@@ -1814,7 +1812,7 @@ a:visited {
   color: white; }
 
 .masthead {
-  background: url("../../assets/images/abovetheclouds.jpg") no-repeat center center/cover;
+  background: url("../../assets/images/abovetheclouds-crop.jpg") no-repeat center center/cover;
   width: 100%;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1894,115 +1892,8 @@ a:visited {
 .front-page {
   text-align: center;
   /* Bx Slider */ }
-  .front-page .self-container {
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
-    -webkit-justify-content: space-around;
-        -ms-flex-pack: distribute;
-            justify-content: space-around; }
-    @media (min-width: 1280px) {
-      .front-page .self-container {
-        -webkit-flex-wrap: nowrap;
-            -ms-flex-wrap: nowrap;
-                flex-wrap: nowrap; } }
-  .front-page .self-description {
-    width: 100%; }
-    .front-page .self-description p {
-      margin-top: 0; }
-    @media (min-width: 1280px) {
-      .front-page .self-description {
-        -webkit-order: 2;
-            -ms-flex-order: 2;
-                order: 2;
-        width: 37%;
-        margin: 0 2%; } }
-  @media (min-width: 1280px) {
-    .front-page .headshot-container {
-      -webkit-order: 1;
-          -ms-flex-order: 1;
-              order: 1;
-      width: 29%; } }
-  .front-page .headshot {
-    height: 207px;
-    border-radius: 12px; }
-    @media (min-width: 1280px) {
-      .front-page .headshot {
-        height: 380px; } }
-  .front-page .skillbar-container {
-    width: 50%; }
-    @media (min-width: 1280px) {
-      .front-page .skillbar-container {
-        -webkit-order: 3;
-            -ms-flex-order: 3;
-                order: 3;
-        width: 29%;
-        padding: 0 2%; } }
-    .front-page .skillbar-container .skillbar {
-      position: relative;
-      display: block;
-      margin-bottom: 6px;
-      width: 100%;
-      height: 24px;
-      border-radius: 8px;
-      transition: 0.4s linear;
-      transition-property: width, background-color; }
-      @media (min-width: 1280px) {
-        .front-page .skillbar-container .skillbar {
-          height: 40px;
-          margin-bottom: 14px;
-          border-radius: 14px; } }
-    .front-page .skillbar-container span {
-      position: absolute;
-      font-weight: bold;
-      font-family: "cabin", serif;
-      font-size: 12px;
-      color: #ffffff;
-      display: block;
-      padding: 0 4px;
-      line-height: 20px; }
-      @media (min-width: 1280px) {
-        .front-page .skillbar-container span {
-          line-height: 36px;
-          font-size: 1.4rem; } }
-    .front-page .skillbar-container .skillbar-bar {
-      height: 21px;
-      width: 0;
-      border-radius: 5px; }
-      @media (min-width: 1280px) {
-        .front-page .skillbar-container .skillbar-bar {
-          height: 37px;
-          border-radius: 10px; } }
-  .front-page .skillbar:first-child {
-    border: 2px solid #228B1E; }
-  .front-page .skillbar:nth-child(2) {
-    border: 2px solid #2AA2AD; }
-  .front-page .skillbar:nth-child(3) {
-    border: 2px solid #1A6689; }
-  .front-page .skillbar:nth-child(4) {
-    border: 2px solid #531E8B; }
-  .front-page .skillbar:nth-child(5) {
-    border: 2px solid #951D16; }
-  .front-page .skillbar:nth-child(6) {
-    border: 2px solid #B97C17; }
-  .front-page .skillbar:nth-child(7) {
-    border: 2px solid #CBBF29; }
-  .front-page .continue {
-    margin-top: 2rem; }
-    .front-page .continue p {
-      margin-bottom: 0; }
-    .front-page .continue .fa-angle-double-down {
-      font-size: 1.5rem; }
-  .front-page .image-break {
-    background: url("../../assets/images/jerichosunset-fix.jpg") no-repeat center center/cover fixed;
-    width: 100%;
-    height: 229px; }
-    @media (min-width: 1280px) {
-      .front-page .image-break {
-        height: 650px; } }
+  .front-page .my-work {
+    margin: 2rem 0; }
   .front-page .bx-wrapper {
     overflow: hidden; }
     .front-page .bx-wrapper img {
@@ -2056,6 +1947,8 @@ a:visited {
           top: 0;
           color: transparent;
           transition: all 0.2s ease; } }
+    .front-page .bx-wrapper a span {
+      border-bottom: 1px solid; }
     @media (min-width: 1280px) {
       .front-page .bx-wrapper a:hover div {
         background: rgba(0, 0, 0, 0.6);
@@ -2070,6 +1963,99 @@ a:visited {
       @media (min-width: 1280px) {
         .front-page .bxslider li, .front-page .bxslider img {
           width: 23vw !important; } }
+  .front-page .about-me {
+    background-color: #204262;
+    color: white;
+    padding: 1rem 0 4rem; }
+  .front-page .self-container {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around; }
+    @media (min-width: 1280px) {
+      .front-page .self-container {
+        -webkit-flex-wrap: nowrap;
+            -ms-flex-wrap: nowrap;
+                flex-wrap: nowrap; } }
+  .front-page .self-description {
+    width: 100%;
+    text-align: justify;
+    margin: 0 1rem; }
+    .front-page .self-description p {
+      margin-top: 0; }
+    @media (min-width: 1280px) {
+      .front-page .self-description {
+        -webkit-order: 2;
+            -ms-flex-order: 2;
+                order: 2;
+        width: 37%;
+        margin: 0 2%; } }
+  @media (min-width: 1280px) {
+    .front-page .headshot-container {
+      -webkit-order: 1;
+          -ms-flex-order: 1;
+              order: 1;
+      width: 29%; } }
+  .front-page .headshot {
+    height: 207px;
+    border-radius: 12px; }
+    @media (min-width: 1280px) {
+      .front-page .headshot {
+        height: 380px; } }
+  .front-page .skillbar-container {
+    width: 50%; }
+    @media (min-width: 1280px) {
+      .front-page .skillbar-container {
+        -webkit-order: 3;
+            -ms-flex-order: 3;
+                order: 3;
+        width: 29%;
+        padding: 0 2%; } }
+    .front-page .skillbar-container .skillbar {
+      position: relative;
+      display: block;
+      margin-bottom: 6px;
+      width: 100%;
+      height: 24px;
+      border-radius: 8px;
+      transition: 0.4s linear;
+      transition-property: width, background-color;
+      border: 2px solid white; }
+      @media (min-width: 1280px) {
+        .front-page .skillbar-container .skillbar {
+          height: 40px;
+          margin-bottom: 14px;
+          border-radius: 14px; } }
+    .front-page .skillbar-container span {
+      position: absolute;
+      font-weight: bold;
+      font-family: "cabin", serif;
+      font-size: 12px;
+      color: #204262;
+      display: block;
+      padding: 0 4px;
+      line-height: 20px; }
+      @media (min-width: 1280px) {
+        .front-page .skillbar-container span {
+          line-height: 36px;
+          font-size: 1.4rem; } }
+    .front-page .skillbar-container .skillbar-bar {
+      height: 21px;
+      width: 0;
+      border-radius: 5px;
+      background-color: white; }
+      @media (min-width: 1280px) {
+        .front-page .skillbar-container .skillbar-bar {
+          height: 37px;
+          border-radius: 10px; } }
+  .front-page .contact-link {
+    background-color: white;
+    color: #204262; }
   @media (min-width: 1280px) {
     .front-page .contact {
       display: -webkit-flex;
@@ -2100,6 +2086,9 @@ a:visited {
     .front-page .wpcf7-form textarea {
       height: 100px;
       resize: none; }
+    .front-page .wpcf7-form p > .wpcf7-submit {
+      background-color: #204262;
+      color: white; }
   @media (min-width: 1280px) {
     .front-page .socials {
       width: 45%; } }
@@ -2117,7 +2106,7 @@ a:visited {
     .front-page .icons-container div {
       width: 43px;
       height: 43px;
-      border: 2px solid black;
+      border: 2px solid;
       border-radius: 50%;
       display: -webkit-flex;
       display: -ms-flexbox;
@@ -2128,18 +2117,37 @@ a:visited {
       -webkit-justify-content: center;
           -ms-flex-pack: center;
               justify-content: center;
-      color: black;
       margin-bottom: 2rem;
-      font-size: .8rem; }
+      font-size: .8rem;
+      transition: all 0.2s ease; }
+      @media (min-width: 1280px) {
+        .front-page .icons-container div {
+          width: 80px;
+          height: 80px; } }
     .front-page .icons-container div:hover {
-      border: none;
       color: white; }
-    .front-page .icons-container .linkedin:hover {
-      background-color: #0077B5; }
-    .front-page .icons-container .twitter:hover {
-      background-color: #55acee; }
-    .front-page .icons-container .at-symbol:hover {
-      background-color: #66DAE0; }
+    .front-page .icons-container .linkedin, .front-page .icons-container .linkedin:hover {
+      background-color: #0077B5;
+      border-color: #0077B5; }
+    .front-page .icons-container .twitter, .front-page .icons-container .twitter:hover {
+      background-color: #55acee;
+      border-color: #55acee; }
+    .front-page .icons-container .instagram, .front-page .icons-container .instagram:hover {
+      background-color: #3f729b;
+      border-color: #3f729b; }
+    @media (min-width: 1280px) {
+      .front-page .icons-container .linkedin, .front-page .icons-container .twitter, .front-page .icons-container .instagram {
+        border-color: black;
+        background-color: white;
+        color: black; }
+        .front-page .icons-container .linkedin i, .front-page .icons-container .twitter i, .front-page .icons-container .instagram i {
+          font-size: 2.5rem; } }
+
+.error-404 {
+  text-align: center; }
+  .error-404 a {
+    text-decoration: none;
+    color: #aaa; }
 
 /*--------------------------------------------------------------
 # Page Templates
