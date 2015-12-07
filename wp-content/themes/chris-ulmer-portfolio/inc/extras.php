@@ -20,3 +20,12 @@ function red_starter_body_classes( $classes ) {
 	return $classes;
 }
 add_filter( 'body_class', 'red_starter_body_classes' );
+
+function redirect_404 () {
+
+	if ( is_404() || is_search() ) {
+		wp_redirect( home_url(), 301);
+		exit();
+	}
+}
+add_action( 'template_redirect', 'redirect_404' );
