@@ -21,7 +21,7 @@ jQuery(document).ready(function(){
     
     var $window = $(window),
         $mainNav = $('.main-navigation'), // nav wrapper element
-        $mastHead = $('.site-header'), // site header element
+        $mastHead = $('.masthead'), // masthead element
         headerHeightOffset = $mastHead.height() - $mainNav.height(),
         stickyNavTop = $mainNav.scrollTop() + headerHeightOffset;
     

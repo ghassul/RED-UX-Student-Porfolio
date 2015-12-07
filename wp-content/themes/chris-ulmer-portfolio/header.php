@@ -28,9 +28,6 @@
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 				</nav><!-- #site-navigation -->
 
-				<section class="masthead">
-					<h1><?php echo esc_html( CFS()->get( 'site_header' ) ); ?></h1>
-				</section>
 
 			</header><!-- #masthead -->
 

@@ -107,3 +107,23 @@ require get_template_directory() . '/inc/template-tags.php';
  * Custom functions that act independently of the theme templates.
  */
 require get_template_directory() . '/inc/extras.php';
+
+function project_image_sizer($picture_loop) {
+
+	$picture_count = count( $picture_loop );
+	switch ($picture_count) {
+
+		case 1:
+			return 'full-size';
+
+		case 2:
+			return 'large';
+
+		case 3:
+			return 'medium';
+
+		default:
+			return 'thumbnail';
+
+	}
+}

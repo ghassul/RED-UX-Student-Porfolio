@@ -1,6 +1,17 @@
 .front-page {
   text-align: center;
 
+  .masthead {
+    background: url("../../assets/images/abovetheclouds-crop.jpg") no-repeat center center/cover;
+    height: 229px;
+    text-align: center;
+
+    @include desktop {
+      height: 800px;
+      background-attachment: fixed;
+    }
+  }
+
   .my-work {
     margin: 2rem 0;
   }
@@ -249,7 +260,7 @@
 
     .wpcf7-text, .wpcf7-email {
       @include desktop {
-        width: 50%;
+        width: 60%;
       }
     }
 
@@ -290,6 +301,7 @@
       justify-content: center;
       margin-bottom: 2rem;
       font-size: .8rem;
+      color: white;
       transition: all 0.2s ease;
 
       @include desktop {
@@ -319,10 +331,13 @@
 
     .linkedin, .twitter, .instagram {
       @include desktop {
+        border-color: black;
+        background-color: white;
+        color: black;
+
         i {
           font-size: 2.5rem;
         }
-        @include social-links-desktop
       }
     }
   }

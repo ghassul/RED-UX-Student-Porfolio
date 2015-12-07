@@ -1812,7 +1812,6 @@ a:visited {
   color: white; }
 
 .masthead {
-  background: url("../../assets/images/abovetheclouds-crop.jpg") no-repeat center center/cover;
   width: 100%;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1823,12 +1822,7 @@ a:visited {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 229px;
-  text-align: center; }
-  @media (min-width: 1280px) {
-    .masthead {
-      height: 800px;
-      background-attachment: fixed; } }
+  min-height: 70px; }
 
 .main-navigation {
   position: fixed;
@@ -1866,6 +1860,9 @@ a:visited {
   font-size: 1.5rem;
   font-family: "cabin", serif; }
 
+.menu-toggle {
+  display: none; }
+
 .site-footer {
   background-color: black;
   color: white;
@@ -1892,6 +1889,14 @@ a:visited {
 .front-page {
   text-align: center;
   /* Bx Slider */ }
+  .front-page .masthead {
+    background: url("../../assets/images/abovetheclouds-crop.jpg") no-repeat center center/cover;
+    height: 229px;
+    text-align: center; }
+    @media (min-width: 1280px) {
+      .front-page .masthead {
+        height: 800px;
+        background-attachment: fixed; } }
   .front-page .my-work {
     margin: 2rem 0; }
   .front-page .bx-wrapper {
@@ -2082,7 +2087,7 @@ a:visited {
       border: 2px solid #ccc; }
     @media (min-width: 1280px) {
       .front-page .wpcf7-form .wpcf7-text, .front-page .wpcf7-form .wpcf7-email {
-        width: 50%; } }
+        width: 60%; } }
     .front-page .wpcf7-form textarea {
       height: 100px;
       resize: none; }
@@ -2119,6 +2124,7 @@ a:visited {
               justify-content: center;
       margin-bottom: 2rem;
       font-size: .8rem;
+      color: white;
       transition: all 0.2s ease; }
       @media (min-width: 1280px) {
         .front-page .icons-container div {
@@ -2142,6 +2148,74 @@ a:visited {
         color: black; }
         .front-page .icons-container .linkedin i, .front-page .icons-container .twitter i, .front-page .icons-container .instagram i {
           font-size: 2.5rem; } }
+
+.single-case-study .masthead {
+  background: url("../../assets/images/abovetheclouds-crop.jpg") no-repeat center center/cover;
+  height: 229px; }
+  @media (min-width: 1280px) {
+    .single-case-study .masthead {
+      height: 400px;
+      background-attachment: fixed;
+      margin-bottom: 4rem; } }
+
+.single-case-study h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  line-height: 1;
+  margin: 0;
+  color: white; }
+  @media (min-width: 1280px) {
+    .single-case-study h1 {
+      font-size: 6rem; } }
+
+.single-case-study h2 {
+  font-size: 2rem;
+  line-height: 1;
+  margin: 0;
+  color: white; }
+  @media (min-width: 1280px) {
+    .single-case-study h2 {
+      font-size: 4rem; } }
+
+.single-case-study h1, .single-case-study h2, .single-case-study h3 {
+  font-family: "cabin", serif; }
+
+.single-case-study .title {
+  margin: 1rem; }
+  @media (min-width: 1280px) {
+    .single-case-study .title {
+      margin: 5rem auto;
+      max-width: 1280px;
+      width: 100%; } }
+
+.single-case-study .entry-content {
+  max-width: 1280px;
+  margin: 0 auto; }
+  .single-case-study .entry-content h3 {
+    font-size: 2rem;
+    text-align: center;
+    color: black; }
+  .single-case-study .entry-content p {
+    margin: 2rem;
+    font-family: "cabin", serif;
+    color: black; }
+  .single-case-study .entry-content .picture-container {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+    .single-case-study .entry-content .picture-container .img-wrapper {
+      -webkit-flex: 1;
+          -ms-flex: 1;
+              flex: 1;
+      margin: .5rem; }
+      @media (min-width: 1280px) {
+        .single-case-study .entry-content .picture-container .img-wrapper {
+          margin: 1rem; } }
+      .single-case-study .entry-content .picture-container .img-wrapper img {
+        width: 100%; }
 
 .error-404 {
   text-align: center; }

@@ -1,0 +1,90 @@
+.single-case-study {
+
+  .masthead {
+    background: url("../../assets/images/abovetheclouds-crop.jpg") no-repeat center center/cover;
+    height: 229px;
+
+    @include desktop {
+      height: 400px;
+      background-attachment: fixed;
+      margin-bottom: 4rem;
+    }
+  }
+
+  h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    line-height: 1;
+    margin: 0;
+    color: white;
+
+    @include desktop {
+      font-size: 6rem;
+    }
+  }
+
+  h2 {
+    font-size: 2rem;
+    line-height: 1;
+    margin: 0;
+    color: white;
+
+    @include desktop {
+      font-size: 4rem;
+    }
+  }
+
+  h1, h2, h3 {
+    font-family: $font__accent;
+  }
+
+  .title {
+    margin: 1rem;
+
+    @include desktop {
+      margin: 5rem auto;
+      max-width: 1280px;
+      width: 100%;
+    }
+  }
+
+  .entry-content {
+    max-width: 1280px;
+    margin: 0 auto;
+
+    h3 {
+      font-size: 2rem;
+      text-align: center;
+      color: black;
+    }
+
+    p {
+      margin: 2rem;
+      font-family: $font__accent;
+      color: black;
+
+      @include desktop {
+
+      }
+    }
+
+    .picture-container {
+      display: flex;
+      flex-wrap: wrap;
+
+
+      .img-wrapper {
+        flex: 1;
+        margin: .5rem;
+
+        @include desktop {
+          margin: 1rem;
+        }
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
