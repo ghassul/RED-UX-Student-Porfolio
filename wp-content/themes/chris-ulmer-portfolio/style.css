@@ -1772,14 +1772,14 @@ h1 {
   font-family: "pt_serif", sans-serif;
   font-size: 20px;
   color: #E3E3E3; }
-  @media (min-width: 1280px) {
+  @media (min-width: 1000px) {
     h1 {
       font-size: 6rem; } }
 
 h2 {
   font-family: "pt_serif", sans-serif;
   font-size: 22px; }
-  @media (min-width: 1280px) {
+  @media (min-width: 1000px) {
     h2 {
       font-size: 6rem;
       margin: 1rem; } }
@@ -1787,12 +1787,12 @@ h2 {
 h3 {
   font-family: "pt_serif", sans-serif;
   font-size: 18px; }
-  @media (min-width: 1280px) {
+  @media (min-width: 1000px) {
     h3 {
       font-size: 2rem;
       margin-top: .5rem; } }
 
-@media (min-width: 1280px) {
+@media (min-width: 1000px) {
   p {
     font-size: 1.7rem; } }
 
@@ -1869,7 +1869,7 @@ a:visited {
   text-align: center; }
   .site-footer .site-info {
     padding: 1.5rem; }
-    @media (min-width: 1280px) {
+    @media (min-width: 1000px) {
       .site-footer .site-info {
         display: -webkit-flex;
         display: -ms-flexbox;
@@ -1881,7 +1881,7 @@ a:visited {
   .site-footer p {
     font-size: 12px;
     margin: 0 0 .1rem; }
-    @media (min-width: 1280px) {
+    @media (min-width: 1000px) {
       .site-footer p {
         font-size: 1.3rem;
         margin: 0 .5rem; } }
@@ -1893,7 +1893,7 @@ a:visited {
     background: url("../../assets/images/abovetheclouds-crop.jpg") no-repeat center center/cover;
     height: 229px;
     text-align: center; }
-    @media (min-width: 1280px) {
+    @media (min-width: 1000px) {
       .front-page .masthead {
         height: 800px;
         background-attachment: fixed; } }
@@ -1910,14 +1910,14 @@ a:visited {
       background: #fff;
       overflow: visible !important;
       margin-bottom: 4rem; }
-      @media (min-width: 1280px) {
+      @media (min-width: 1000px) {
         .front-page .bx-wrapper .bx-viewport {
           overflow: hidden !important;
           margin-bottom: 0; } }
     .front-page .bx-wrapper .bx-controls-direction a {
       text-indent: 0;
       top: 39%; }
-      @media (min-width: 1280px) {
+      @media (min-width: 1000px) {
         .front-page .bx-wrapper .bx-controls-direction a {
           top: 50%; } }
     .front-page .bx-wrapper .bx-controls-direction i {
@@ -1936,7 +1936,7 @@ a:visited {
       bottom: 0;
       right: 0;
       color: #696969; }
-      @media (min-width: 1280px) {
+      @media (min-width: 1000px) {
         .front-page .bx-wrapper a div {
           display: -webkit-flex;
           display: -ms-flexbox;
@@ -1954,18 +1954,18 @@ a:visited {
           transition: all 0.2s ease; } }
     .front-page .bx-wrapper a span {
       border-bottom: 1px solid; }
-    @media (min-width: 1280px) {
+    @media (min-width: 1000px) {
       .front-page .bx-wrapper a:hover div {
         background: rgba(0, 0, 0, 0.6);
         color: #ddd; } }
   .front-page .bxslider {
     margin: 0 !important; }
-    @media (min-width: 1280px) {
+    @media (min-width: 1000px) {
       .front-page .bxslider li {
         margin-right: 2vw; } }
     .front-page .bxslider li, .front-page .bxslider img {
       width: 50vw !important; }
-      @media (min-width: 1280px) {
+      @media (min-width: 1000px) {
         .front-page .bxslider li, .front-page .bxslider img {
           width: 23vw !important; } }
   .front-page .about-me {
@@ -1982,7 +1982,7 @@ a:visited {
     -webkit-justify-content: space-around;
         -ms-flex-pack: distribute;
             justify-content: space-around; }
-    @media (min-width: 1280px) {
+    @media (min-width: 1000px) {
       .front-page .self-container {
         -webkit-flex-wrap: nowrap;
             -ms-flex-wrap: nowrap;
@@ -1993,14 +1993,14 @@ a:visited {
     margin: 0 1rem; }
     .front-page .self-description p {
       margin-top: 0; }
-    @media (min-width: 1280px) {
+    @media (min-width: 1000px) {
       .front-page .self-description {
         -webkit-order: 2;
             -ms-flex-order: 2;
                 order: 2;
         width: 37%;
         margin: 0 2%; } }
-  @media (min-width: 1280px) {
+  @media (min-width: 1000px) {
     .front-page .headshot-container {
       -webkit-order: 1;
           -ms-flex-order: 1;
@@ -2009,12 +2009,12 @@ a:visited {
   .front-page .headshot {
     height: 207px;
     border-radius: 12px; }
-    @media (min-width: 1280px) {
+    @media (min-width: 1000px) {
       .front-page .headshot {
         height: 380px; } }
   .front-page .skillbar-container {
     width: 50%; }
-    @media (min-width: 1280px) {
+    @media (min-width: 1000px) {
       .front-page .skillbar-container {
         -webkit-order: 3;
             -ms-flex-order: 3;
@@ -2031,7 +2031,7 @@ a:visited {
       transition: 0.4s linear;
       transition-property: width, background-color;
       border: 2px solid white; }
-      @media (min-width: 1280px) {
+      @media (min-width: 1000px) {
         .front-page .skillbar-container .skillbar {
           height: 40px;
           margin-bottom: 14px;
@@ -2045,7 +2045,7 @@ a:visited {
       display: block;
       padding: 0 4px;
       line-height: 20px; }
-      @media (min-width: 1280px) {
+      @media (min-width: 1000px) {
         .front-page .skillbar-container span {
           line-height: 36px;
           font-size: 1.4rem; } }
@@ -2054,14 +2054,14 @@ a:visited {
       width: 0;
       border-radius: 5px;
       background-color: white; }
-      @media (min-width: 1280px) {
+      @media (min-width: 1000px) {
         .front-page .skillbar-container .skillbar-bar {
           height: 37px;
           border-radius: 10px; } }
   .front-page .contact-link {
     background-color: white;
     color: #204262; }
-  @media (min-width: 1280px) {
+  @media (min-width: 1000px) {
     .front-page .contact {
       display: -webkit-flex;
       display: -ms-flexbox;
@@ -2072,10 +2072,10 @@ a:visited {
       -webkit-justify-content: space-around;
           -ms-flex-pack: distribute;
               justify-content: space-around; } }
-  @media (min-width: 1280px) {
+  @media (min-width: 1000px) {
     .front-page .contact h2 {
       width: 100%; } }
-  @media (min-width: 1280px) {
+  @media (min-width: 1000px) {
     .front-page .contact-form {
       width: 45%; } }
   .front-page .wpcf7-form {
@@ -2085,7 +2085,7 @@ a:visited {
       font-family: "cabin", serif;
       width: 100%;
       border: 2px solid #ccc; }
-    @media (min-width: 1280px) {
+    @media (min-width: 1000px) {
       .front-page .wpcf7-form .wpcf7-text, .front-page .wpcf7-form .wpcf7-email {
         width: 60%; } }
     .front-page .wpcf7-form textarea {
@@ -2094,7 +2094,7 @@ a:visited {
     .front-page .wpcf7-form p > .wpcf7-submit {
       background-color: #204262;
       color: white; }
-  @media (min-width: 1280px) {
+  @media (min-width: 1000px) {
     .front-page .socials {
       width: 45%; } }
   .front-page .icons-container {
@@ -2126,7 +2126,7 @@ a:visited {
       font-size: .8rem;
       color: white;
       transition: all 0.2s ease; }
-      @media (min-width: 1280px) {
+      @media (min-width: 1000px) {
         .front-page .icons-container div {
           width: 80px;
           height: 80px; } }
@@ -2141,7 +2141,7 @@ a:visited {
     .front-page .icons-container .instagram, .front-page .icons-container .instagram:hover {
       background-color: #3f729b;
       border-color: #3f729b; }
-    @media (min-width: 1280px) {
+    @media (min-width: 1000px) {
       .front-page .icons-container .linkedin, .front-page .icons-container .twitter, .front-page .icons-container .instagram {
         border-color: black;
         background-color: white;
@@ -2152,7 +2152,7 @@ a:visited {
 .single-case-study .masthead {
   background: url("../../assets/images/abovetheclouds-crop.jpg") no-repeat center center/cover;
   height: 229px; }
-  @media (min-width: 1280px) {
+  @media (min-width: 1000px) {
     .single-case-study .masthead {
       height: 400px;
       background-attachment: fixed;
@@ -2164,7 +2164,7 @@ a:visited {
   line-height: 1;
   margin: 0;
   color: white; }
-  @media (min-width: 1280px) {
+  @media (min-width: 1000px) {
     .single-case-study h1 {
       font-size: 6rem; } }
 
@@ -2173,7 +2173,7 @@ a:visited {
   line-height: 1;
   margin: 0;
   color: white; }
-  @media (min-width: 1280px) {
+  @media (min-width: 1000px) {
     .single-case-study h2 {
       font-size: 4rem; } }
 
@@ -2182,7 +2182,7 @@ a:visited {
 
 .single-case-study .title {
   margin: 1rem; }
-  @media (min-width: 1280px) {
+  @media (min-width: 1000px) {
     .single-case-study .title {
       margin: 5rem auto;
       max-width: 1280px;
@@ -2211,7 +2211,7 @@ a:visited {
           -ms-flex: 1;
               flex: 1;
       margin: .5rem; }
-      @media (min-width: 1280px) {
+      @media (min-width: 1000px) {
         .single-case-study .entry-content .picture-container .img-wrapper {
           margin: 1rem; } }
       .single-case-study .entry-content .picture-container .img-wrapper img {
