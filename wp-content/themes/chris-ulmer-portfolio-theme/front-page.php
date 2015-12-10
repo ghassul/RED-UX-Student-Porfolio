@@ -121,7 +121,7 @@ get_header(); ?>
                     <a href="https://twitter.com/thechrisulmer">
                         <div class="twitter"><i class="fa fa-twitter fa-2x"></i></div>
                     </a>
-                    <a href="">
+                    <a href="https://www.instagram.com/thechrisulmer/">
                         <div class="instagram"><i class="fa fa-instagram fa-2x"></i></div>
                     </a>
                 </div>
